@@ -1,0 +1,29 @@
+#gen-button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#generateButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10vw;
+    height: 3rem;
+    background-color: orange;
+    border: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  #generateButton:hover {
+    background-color: darkorange;
+  }
+  
+  #disclaimer {
+    font-size: 0.5rem;
+  }

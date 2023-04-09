@@ -1,8 +1,5 @@
 import { useState, useRef, useEffect } from 'react';
-import image1 from '@/assets/images/icons8-drawing-64.png';
-import image2 from '@/assets/images/icons8-flower-bouquet-64.png';
-import image3 from '@/assets/images/icons8-paint-palette-64.png';
-import image4 from '@/assets/images/icons8-party-balloons-64.png';
+import Images from '@/Components/Utils/importImages.js'
 import './decoration.css';
 
 function Decoration() {
@@ -53,7 +50,7 @@ function Decoration() {
         const color = `rgb(${Math.floor(Math.random() * 256)}, ${Math.floor(
           Math.random() * 256
         )}, ${Math.floor(Math.random() * 256)})`;
-        const image = [image1, image2, image3, image4][Math.floor(Math.random() * 4)];
+        const image = [Images.thumbsUp, Images.logo, Images.thumbsUp, Images.logo][Math.floor(Math.random() * 4)];
         newElements.push({ id, x, y, size, color, image });
       }
       setElements(newElements);

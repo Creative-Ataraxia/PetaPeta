@@ -60,7 +60,7 @@ function Page2Body() {
       </div>
       <div className="bodyRight">
         <div>
-          <Link to="/petapeta-UI-take2/" className="close-button">
+          <Link to="/" className="close-button">
             <img src="src/assets/images/icons8-close-window-100.png" alt="Close" />
           </Link>
         </div>

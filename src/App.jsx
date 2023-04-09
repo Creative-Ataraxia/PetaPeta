@@ -9,8 +9,8 @@ function App() {
     <div>
       <Router>
         <Routes>
-          <Route exact path="/petapeta-UI-take2/" element={<Page1Index />} />
-          <Route exact path="/petapeta-UI-take2/page2index" element={<Page2Index />} />
+          <Route path="/" element={<Page1Index />} />
+          <Route path="/page2index" element={<Page2Index />} />
         </Routes>
       </Router>
     </div>
@@ -18,3 +18,5 @@ function App() {
 }
 
 export default App;
+
+// note: path="" designates all paths which can be referenced by any other elements that needs to path

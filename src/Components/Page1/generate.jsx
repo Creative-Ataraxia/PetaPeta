@@ -41,7 +41,7 @@ class GenerateImage extends Component {
 
     return (
       <div id="gen-button-container">
-        <Link to="/petapeta-UI-take2/page2index">
+        <Link to="/page2index">
           <button id="generateButton" onClick={this.handleGenerateImage} disabled={isLoading}>
             {isLoading ? '生成中...' : '生成画作'}
           </button>

@@ -24,7 +24,6 @@ function App() {
       <ImageUpload onImageUpload={handleImageUpload} />
       <Options/>
       <GenerateImage uploadedImage={uploadedImage} selectedOptions={selectedOptions} />
-      
     </div>
   );
 }

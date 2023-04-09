@@ -9,7 +9,19 @@
     height: 40vh;
     margin: 0 auto;
     margin-top: 5vh;
-    z-index: 5;
+  }
+
+  #upload-image-box {
+    position: absolute;
+    width: 20vw;
+    height: 40vh;
+  }
+
+  #upload-image-box img {
+    max-width: 100%;
+    max-height: 100%;
+    z-index: -1;
+
   }
   
   .upload-button {
@@ -26,6 +38,7 @@
     text-align: center;
     border-radius: 50px;
     cursor: pointer;
+    z-index: 1;
   }
   
   #image-upload-button {

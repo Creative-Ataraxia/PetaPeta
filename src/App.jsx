@@ -7,7 +7,7 @@ import Page2Index from './Components/Page2/page2Index.jsx';
 function App() {
   return (
     <div>
-      <Router>
+      <Router basename='/'>
         <Routes>
           <Route path="/" element={<Page1Index />} />
           <Route path="/page2index" element={<Page2Index />} />

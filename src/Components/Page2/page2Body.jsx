@@ -54,7 +54,7 @@ function Page2Body() {
         </div>
         <div className="satisfaction">
             <p>对这个结果满意吗？</p>
-            <img id="thumbup" src="src/assets/images/icons8-thumbs-up-100.png" class="thumbup" alt="thumbs up"/>
+            <img id="thumbup" src="src/assets/images/icons8-thumbs-up-100.png" className="thumbup" alt="thumbs up"/>
             <img id="thumbdown" src="src/assets/images/icons8-thumbs-down-100.png" alt="thumbs down"/>
         </div>
       </div>

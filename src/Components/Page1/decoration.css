@@ -45,12 +45,13 @@
     left: 1rem;
   }
   
-  .add-image button {
+  .add-image-button {
     position: absolute;
     top: 10vh;
     left: .5vw;
     border-radius: 25px;
     width: 2rem;
     height: 3rem;
+    z-index: 5;
   }
   

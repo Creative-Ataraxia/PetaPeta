@@ -62,7 +62,7 @@ function Decoration() {
     return (
       <div className="decoration">
         <div className="add-image">
-          <button onClick={loadImages}>点我</button>
+          <button className="add-image-button" onClick={loadImages}>点我</button>
         </div>
         {elements.map((element) => (
           <div

@@ -1,8 +1,8 @@
 import { useState, useRef, useEffect } from 'react';
-import image1 from '../assets/images/icons8-drawing-64.png';
-import image2 from '../assets/images/icons8-flower-bouquet-64.png';
-import image3 from '../assets/images/icons8-paint-palette-64.png';
-import image4 from '../assets/images/icons8-party-balloons-64.png';
+import image1 from '@/assets/images/icons8-drawing-64.png';
+import image2 from '@/assets/images/icons8-flower-bouquet-64.png';
+import image3 from '@/assets/images/icons8-paint-palette-64.png';
+import image4 from '@/assets/images/icons8-party-balloons-64.png';
 import './decoration.css';
 
 function Decoration() {

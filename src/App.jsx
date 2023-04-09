@@ -1,29 +1,18 @@
-import React, { useState } from 'react';
-import Header from './Components/header.jsx';
-import ImageUpload from './Components/uploadBox.jsx';
-import Options from './Components/options.jsx';
-import GenerateImage from './Components/generate.jsx';
-import Decoration from './Components/decoration.jsx'
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Page1Index from './Components/Page1/page1Index.jsx';
+import Page2Index from './Components/Page2/page2Index.jsx';
+
 
 function App() {
-  const [uploadedImage, setUploadedImage] = useState(null);
-  const [selectedOptions, setSelectedOptions] = useState([]);
-
-  const handleImageUpload = (file) => {
-    setUploadedImage(file);
-  }
-
-  const handleOptionSelect = (option) => {
-    setSelectedOptions([...selectedOptions, option]);
-  }
-
   return (
     <div>
-      <Decoration/>
-      <Header/>
-      <ImageUpload onImageUpload={handleImageUpload} />
-      <Options/>
-      <GenerateImage uploadedImage={uploadedImage} selectedOptions={selectedOptions} />
+      <Router>
+        <Routes>
+          <Route exact path="/petapeta-UI-take2/" element={<Page1Index />} />
+          <Route exact path="/petapeta-UI-take2/page2index" element={<Page2Index />} />
+        </Routes>
+      </Router>
     </div>
   );
 }

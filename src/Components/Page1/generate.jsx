@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import './generate.css'
+import { Link } from 'react-router-dom';
+import './generate.css';
 
 class GenerateImage extends Component {
   state = {
@@ -40,9 +41,11 @@ class GenerateImage extends Component {
 
     return (
       <div id="gen-button-container">
-        <button id="generateButton" onClick={this.handleGenerateImage} disabled={isLoading}>
-          {isLoading ? '生成中...' : '生成画作'}
-        </button>
+        <Link to="/petapeta-UI-take2/page2index">
+          <button id="generateButton" onClick={this.handleGenerateImage} disabled={isLoading}>
+            {isLoading ? '生成中...' : '生成画作'}
+          </button>
+        </Link>
         {error && <p>{error.message}</p>}
         {images.length > 0 && (
           <div>

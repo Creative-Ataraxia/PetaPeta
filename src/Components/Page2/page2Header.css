@@ -1,0 +1,44 @@
+.page2-header {
+    height: 20vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  
+  .new-creations-button {
+    height: 7vh;
+    width: 10vw;
+    background-color: rgb(87, 87, 187);
+    color: white;
+    border-radius: 50px;
+    margin-right: 15vw;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .new-creations-button:hover {
+    background-color: blue;
+  }
+
+  .drawer {
+    position: absolute;
+    top: 5vh;
+    left: -50vw;
+    width: 50vw;
+    height: 10vh;
+    background-color: #ffffff18;
+    transition: transform 0.75s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+  }
+  
+  .drawer.open {
+    transform: translateX(50vw);
+  }
+  
+  
+  

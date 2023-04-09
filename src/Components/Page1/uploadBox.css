@@ -9,6 +9,7 @@
     height: 40vh;
     margin: 0 auto;
     margin-top: 5vh;
+    z-index: 5;
   }
   
   .upload-button {
@@ -27,8 +28,9 @@
     cursor: pointer;
   }
   
-  #image-upload {
+  #image-upload-button {
     display: none;
+    z-index: 5;
   }
   
   p {

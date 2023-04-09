@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import './options.css';
-import option1Bg from '../assets/images/octo.jpg';
-import option2Bg from '../assets/images/octo.jpg';
-import option3Bg from '../assets/images/octo.jpg';
+import option1Bg from '@/assets/images/octo.jpg';
+import option2Bg from '@/assets/images/octo.jpg';
+import option3Bg from '@/assets/images/octo.jpg';
 
 function Options(props) {
   const [selectedOptions, setSelectedOptions] = useState([]);

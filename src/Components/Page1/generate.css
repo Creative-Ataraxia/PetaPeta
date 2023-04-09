@@ -18,6 +18,7 @@
     text-transform: uppercase;
     cursor: pointer;
     transition: background-color 0.2s ease-in-out;
+    
   }
   
   #generateButton:hover {

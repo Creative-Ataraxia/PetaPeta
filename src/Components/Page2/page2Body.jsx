@@ -54,23 +54,23 @@ function Page2Body() {
         </div>
         <div className="satisfaction">
             <p>对这个结果满意吗？</p>
-            <img id="thumbup" src="src/assets/images/icons8-thumbs-up-100.png" className="thumbup" alt="thumbs up"/>
-            <img id="thumbdown" src="src/assets/images/icons8-thumbs-down-100.png" alt="thumbs down"/>
+            <img id="thumbup" src="src/assets/images/thumbs-up-100.png" className="thumbup" alt="thumbs up"/>
+            <img id="thumbdown" src="src/assets/images/thumbs-down-100.png" alt="thumbs down"/>
         </div>
       </div>
       <div className="bodyRight">
         <div>
           <Link to="/" className="close-button">
-            <img src="src/assets/images/icons8-close-window-100.png" alt="Close" />
+            <img src="src/assets/images/close-window-100.png" alt="Close" />
           </Link>
         </div>
         <div className="actions">
             <button className="save" onClick={handleSaveClick}>下载/保存</button>
             <button className="share" onClick={handleShareClick}>分享</button>
             <div className="add-concepts">
-                <img id="concept-img1" src="src/assets/images/bg_cta_1.jpg" alt="add concepts icon"/>
-                <img id="concept-img2" src="src/assets/images/bg_cta_2.jpg" alt="add concepts icon"/>
-                <img id="concept-img3" src="src/assets/images/bg_cta_3.jpg" alt="add concepts icon"/>
+                <img id="concept-img1" src="src/assets/images/addConcept1.jpg" alt="add concepts icon"/>
+                <img id="concept-img2" src="src/assets/images/addConcept2.jpg" alt="add concepts icon"/>
+                <img id="concept-img3" src="src/assets/images/addConcept3.jpg" alt="add concepts icon"/>
                 <a href="https://example.com">添加创意</a>
             </div>
         </div>

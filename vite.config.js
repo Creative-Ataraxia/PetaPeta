@@ -10,11 +10,4 @@ export default defineConfig({
       '@': '/src',
     },
   },
-  build: {
-    rollupOptions: {
-      input: {
-        images: '/src/assets/images/*' // Include all files in the images folder
-      }
-    }
-  }
 })

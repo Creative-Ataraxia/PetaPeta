@@ -20,7 +20,6 @@ function Page1Index() {
   return (
     <div>
       <Header/>
-      <Decoration/>
       <ImageUpload onImageUpload={handleImageUpload} />
       <Options/>
       <GenerateImage uploadedImage={uploadedImage} selectedOptions={selectedOptions} />

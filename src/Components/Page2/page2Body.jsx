@@ -1,10 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './page2Body.css';
-import placeholder1 from '@/assets/images/octo.jpg';
-import placeholder2 from '@/assets/images/octo.jpg';
-import placeholder3 from '@/assets/images/octo.jpg';
-import placeholder4 from '@/assets/images/octo.jpg';
+import Images from '@/Components/Utils/importImages.js';
 
 function Page2Body() {
 
@@ -42,35 +39,35 @@ function Page2Body() {
         </div>
         <div className="image-box" id="image-box">
             {showOldImage ? (
-            <img src={placeholder1} alt="Old Image"/>
+            <img src={Images.originalInput} alt="Old Image"/>
             ) : (
 						<div className="image-grid">
-                <img src={placeholder2} alt="New Image 1"/>
-                <img src={placeholder3} alt="New Image 2"/>
-                <img src={placeholder4} alt="New Image 3"/>
-                <img src={placeholder2} alt="New Image 4"/>
+                <img src={Images.generatedOutput1} alt="New Image 1"/>
+                <img src={Images.generatedOutput2} alt="New Image 2"/>
+                <img src={Images.generatedOutput3} alt="New Image 3"/>
+                <img src={Images.generatedOutput4} alt="New Image 4"/>
             </div>
             )}
         </div>
         <div className="satisfaction">
             <p>对这个结果满意吗？</p>
-            <img id="thumbup" src="src/assets/images/thumbs-up-100.png" className="thumbup" alt="thumbs up"/>
-            <img id="thumbdown" src="src/assets/images/thumbs-down-100.png" alt="thumbs down"/>
+            <img id="thumbup" src={Images.thumbsUp} className="thumbup" alt="thumbs up"/>
+            <img id="thumbdown" src={Images.thumbsDown} alt="thumbs down"/>
         </div>
       </div>
       <div className="bodyRight">
         <div>
           <Link to="/" className="close-button">
-            <img src="src/assets/images/close-window-100.png" alt="Close" />
+            <img src={Images.closeIcon} alt="Close" />
           </Link>
         </div>
         <div className="actions">
             <button className="save" onClick={handleSaveClick}>下载/保存</button>
             <button className="share" onClick={handleShareClick}>分享</button>
             <div className="add-concepts">
-                <img id="concept-img1" src="src/assets/images/addConcept1.jpg" alt="add concepts icon"/>
-                <img id="concept-img2" src="src/assets/images/addConcept2.jpg" alt="add concepts icon"/>
-                <img id="concept-img3" src="src/assets/images/addConcept3.jpg" alt="add concepts icon"/>
+                <img id="concept-img1" src={Images.addConcept1} alt="add concepts icon"/>
+                <img id="concept-img2" src={Images.addConcept2} alt="add concepts icon"/>
+                <img id="concept-img3" src={Images.addConcept3} alt="add concepts icon"/>
                 <a href="https://example.com">添加创意</a>
             </div>
         </div>

@@ -1,8 +1,6 @@
 import { useState } from 'react';
 import './options.css';
-import option1Bg from '@/assets/images/octo.jpg';
-import option2Bg from '@/assets/images/octo.jpg';
-import option3Bg from '@/assets/images/octo.jpg';
+import Images from '@/Components/Utils/importImages.js'
 
 function Options(props) {
   const [selectedOptions, setSelectedOptions] = useState([]);
@@ -17,15 +15,15 @@ function Options(props) {
   }
 
   const options = [
-    { label: '丙烯画', value: '1', background: option1Bg },
-    { label: '油画', value: '2', background: option2Bg },
-    { label: '水彩画', value: '3', background: option3Bg },
-    { label: '极简', value: '4', background: option1Bg },
-    { label: '蒸汽波', value: '5', background: option2Bg },
-    { label: '超现实', value: '6', background: option3Bg },
-    { label: '波洛克', value: '7', background: option1Bg },
-    { label: '达利', value: '8', background: option2Bg },
-    { label: '曼恩', value: '9', background: option3Bg },
+    { label: '丙烯画', value: '1', background: Images.arylic },
+    { label: '油画', value: '2', background: Images.oil },
+    { label: '水彩画', value: '3', background: Images.watercolor },
+    { label: '极简', value: '4', background: Images.minimulism },
+    { label: '蒸汽波', value: '5', background: Images.vaperwave },
+    { label: '超现实', value: '6', background: Images.surrealism },
+    { label: '波洛克', value: '7', background: Images.Pollock },
+    { label: '达利', value: '8', background: Images.Dali },
+    { label: '梵高', value: '9', background: Images.VanGogh },
   ];
 
   return (

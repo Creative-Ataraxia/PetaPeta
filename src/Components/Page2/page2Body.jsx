@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './page2Body.css';
 import placeholder1 from '@/assets/images/octo.jpg';
 import placeholder2 from '@/assets/images/octo.jpg';
@@ -58,6 +59,11 @@ function Page2Body() {
         </div>
       </div>
       <div className="bodyRight">
+        <div>
+          <Link to="/petapeta-UI-take2/" className="close-button">
+            <img src="src/assets/images/icons8-close-window-100.png" alt="Close" />
+          </Link>
+        </div>
         <div className="actions">
             <button className="save" onClick={handleSaveClick}>下载/保存</button>
             <button className="share" onClick={handleShareClick}>分享</button>

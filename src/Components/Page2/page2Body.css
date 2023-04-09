@@ -101,6 +101,17 @@
     }
   }
   
+  .close-button {
+    position: absolute;
+    top: 10rem;
+    right: 10rem;
+    cursor: pointer;
+  }
+  
+  .close-button img {
+    width: 1.5rem;
+    filter: brightness(0) invert(1);
+  }
   
   .actions {
     display: flex;
